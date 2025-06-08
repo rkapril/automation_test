@@ -23,9 +23,9 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
-ACCOUNT_ID = os.getenv("ACCOUNT_ID", "2092009092")
+ACCOUNT_ID = os.getenv("ACCOUNT_ID")
 # Replace if not using .env
-PASSWORD = os.getenv("PASSWORD", "your_password_here")
+PASSWORD = os.getenv("PASSWORD")
 BASE_URL = "https://aqxtrader.aquariux.com"
 
 
