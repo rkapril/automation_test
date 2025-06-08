@@ -776,7 +776,7 @@ if __name__ == "__main__":
     # Define desired headless state here
     execute_headless = False  # Set to True to run headless, False to run with UI
 
-    if not os.getenv("PASSWORD") or os.getenv("PASSWORD") == "your_password_here":
+    if not os.getenv("PASSWORD"):
         print("ERROR: PASSWORD environment variable not set or is default. Please set it in a .env file or directly.")
         logger.error(
             "ERROR: PASSWORD environment variable not set or is default.")
